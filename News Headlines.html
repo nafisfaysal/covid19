@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>
+        Corona Update BD
+    </title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159081223-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-159081223-1');
+    </script>
+
+
+    <meta charset="utf-8">
+    <meta name="robots" content="index,follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  Essential META Tags -->
+
+    <meta property="og:title" content="Codephilics">
+    <meta property="og:description" content="Technology For Smarter Business">
+    <meta property="og:image" content="https://codephilics.com/images/covid-19Logo.png">
+    <meta property="og:url" content="https://codephilics.com/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:700" rel="stylesheet">
+    <link href="images/codephilics.webp" rel="icon" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/popup.css">
+
+
+    <script src="js/Map.js"></script>
+    <script src="js/BDmap.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <div>
+        <nav class="navbar nav-transparent navbar-expand-lg navbar-light "
+            style="background-color: rgb(248, 249, 250);">
+
+            <a href="COVID-19 BD.html" class="navbar-brand"><img src="images/covid-19Logo.png" height="27px"></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="COVID-19 BD.html"> <b style="font-size: 18px;">হোম</b> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Research and Blog.html"> <b style="font-size: 18px;">রিসার্চ ও
+                                ব্লগ</b>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Emergency Contacts.html"> <b
+                                style="color: black; font-size: 18px; font-weight: bolder;" id="headLine1"
+                                class="fade-effect">জরুরি
+                                যোগাযোগ</b> </a>
+                    </li>
+                </ul>
+                <ul class="ml-auto navbar-nav">
+                    <li class="nav-item" style="font-size: 18px; padding-top: 9px; padding-right: 5px;">
+                        <a><b id="headline2" class="fade-effect">সাহায্যের হাত বাড়ান</b></a>
+                    </li>
+                    <li class="nav-item" style="font-size: 22px">
+                        <a><img onclick="document.getElementById('id01').style.display='block'"
+                                src="images/donateNow.png" style="cursor: pointer;" height="40px"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="id01" class="modal">
+
+        <div class="modal-content animate" style="border-radius: 12px;">
+            <div style="margin-top: 4%;">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">×</span>
+            </div>
+            <h2 style="text-align: center; color: snow;" id="donationHeader">সাহায্য প্রদানের জন্যে ভিজিট করুন</h2>
+            <div class="row">
+                <div class="container2 col-lg-4 col-md-6 col-sm-12"
+                    style="padding-bottom: 1%; margin-top: 15px; display: flex; align-items: center;"><a
+                        href="https://bidyanondo.org/bank-information?fbclid=IwAR1jCLxSQSNRxmYSg5KmiPoU8xWHc1DDiIZt3Mi1fYZOF1KELkFib70ZMTU"
+                        target="_blank" rel="noopener noreferrer"><img id="donation"
+                            style="border-radius: 5px; border: solid; border-color: black;"
+                            src="images/bidyanondoLogo.png" alt=""></a>
+
+                </div>
+                <div class="container2 col-lg-4 col-md-6 col-sm-12"
+                    style="padding-bottom: 1%; margin-top: 15px; display: flex; align-items: center;"><a
+                        href="https://www.facebook.com/donate/643259536496746/1259944240867027/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img id="donation" style="border-radius: 5px; border: solid; border-color: black;"
+                            src="images/manushManusherjonnefoundation.png" alt=""></a>
+                </div>
+                <div class="container2 col-lg-4 col-md-6 col-sm-12"
+                    style="padding-bottom: 1%; margin-top: 15px; display: flex; align-items: center; "><a
+                        href="https://onetakameal.org/donate?fbclid=IwAR2BFHVWPN4LVO3thhDyx4qJ0-6rn-MLlKgmjJKzmyBpgWOElRON8lTBfxc"
+                        target="_blank" rel="noopener noreferrer"><img id="donation"
+                            style="border-radius: 5px; border: solid; border-color: black;" src="images/1TakaiAhar.jpg"
+                            alt=""></a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById('id01');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        } 
+    </script>
+    <div style="background-color: #4f2f2f;">
+        <div id="moreNewsHeadline"></div>
+        <div>
+            <h1 style="text-align: center; color: snow; padding-top: 1.5%;">নির্ভরযোগ্য সংবাদ শিরোনাম সমগ্র</h1>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-left: 4%;">
+                <div>
+                    <div>
+                        <h3 style="text-align: center; color: snow;">২৬.০৩.২০২০</h3>
+                    </div>
+                    <div style="border-bottom-left-radius: 10px; border-top-left-radius: 10px;">
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/bangladesh/article/1647149/%E0%A6%AA%E0%A7%8B%E0%A6%B6%E0%A6%BE%E0%A6%95-%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%96%E0%A6%BE%E0%A6%A8%E0%A6%BE-%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A7-%E0%A6%B0%E0%A6%BE%E0%A6%96%E0%A6%BE%E0%A6%B0-%E0%A6%85%E0%A6%A8%E0%A7%81%E0%A6%B0%E0%A7%8B%E0%A6%A7-%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A6%BF%E0%A6%8F%E0%A6%AE%E0%A6%87%E0%A6%8F%E0%A6%B0"
+                                target="_blank">
+                                <img style="margin-left: 15px;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৬-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">পোশাক কারখানা বন্ধ
+                                    রাখার অনুরোধ বিজিএমইএর</h6>
+                            </a>
+                        </div>
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.thedailystar.net/bangla/%E0%A6%86%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%B0%E0%A7%8D%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A6%BF%E0%A6%95/%E0%A6%95%E0%A6%B0%E0%A7%8B%E0%A6%A8%E0%A6%BE%E0%A6%AD%E0%A6%BE%E0%A6%87%E0%A6%B0%E0%A6%BE%E0%A6%B8-%E0%A6%97%E0%A6%B0%E0%A6%AE%E0%A7%87-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A6%E0%A7%81%E0%A6%B0%E0%A7%8D%E0%A6%AD%E0%A6%BE%E0%A6%AC-%E0%A6%95%E0%A6%AE%E0%A6%BE%E0%A6%B0-%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AD%E0%A6%BE%E0%A6%AC%E0%A6%A8%E0%A6%BE-%E0%A6%95%E0%A6%A4%E0%A6%9F%E0%A6%BE-141037"
+                                target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;"
+                                    src="images/daily-star-bangla-logo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৬-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">করোনাভাইরাস: গরমে
+                                    প্রাদুর্ভাব কমার সম্ভাবনা কতটা?</h6>
+                            </a>
+                        </div>
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/sports/article/1647152/%E0%A6%95%E0%A6%B0%E0%A7%8B%E0%A6%A8%E0%A6%BE%E0%A6%B0-%E0%A6%AC%E0%A6%BF%E0%A6%AA%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A7%87-%E0%A6%B2%E0%A7%9C%E0%A6%A4%E0%A7%87-%E0%A6%A8%E0%A7%87%E0%A6%AE%E0%A7%87%E0%A6%9B%E0%A7%87-%E0%A6%AA%E0%A7%81%E0%A6%B0%E0%A7%8B-%E0%A6%B0%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A6%B2-%E0%A6%AE%E0%A6%BE%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A6%A6"
+                                target="_blank">
+                                <img style="margin-left: 15px;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৬-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    করোনার বিপক্ষে লড়তে নেমেছে পুরো রিয়াল মাদ্রিদ</h6>
+                            </a>
+                        </div>
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.thedailystar.net/bangla/%E0%A6%B6%E0%A7%80%E0%A6%B0%E0%A7%8D%E0%A6%B7-%E0%A6%96%E0%A6%AC%E0%A6%B0/%E0%A6%96%E0%A7%81%E0%A6%B2%E0%A6%A8%E0%A6%BE-%E0%A6%AE%E0%A7%87%E0%A6%A1%E0%A6%BF%E0%A6%95%E0%A7%87%E0%A6%B2%E0%A7%87-%E0%A6%9C%E0%A7%8D%E0%A6%AC%E0%A6%B0-%E0%A6%B6%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A6%95%E0%A6%B7%E0%A7%8D%E0%A6%9F-%E0%A6%A8%E0%A6%BF%E0%A7%9F%E0%A7%87-%E0%A6%AE%E0%A7%83%E0%A6%A4%E0%A7%8D%E0%A6%AF%E0%A7%81-%E0%A6%B8%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%87%E0%A6%B9-%E0%A6%95%E0%A6%B0%E0%A7%8B%E0%A6%A8%E0%A6%BE-%E0%A6%86%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4-141013"
+                                target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;"
+                                    src="images/daily-star-bangla-logo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৬-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">খুলনা মেডিকেলে
+                                    জ্বর-শ্বাসকষ্ট নিয়ে মৃত্যু, সন্দেহ ‘করোনা আক্রান্ত’</h6>
+                            </a>
+                        </div>
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/bangladesh/article/1647154/%E0%A6%86%E0%A6%B0%E0%A7%87%E0%A6%95-%E0%A6%9A%E0%A6%BF%E0%A6%95%E0%A6%BF%E0%A7%8E%E0%A6%B8%E0%A6%95-%E0%A6%95%E0%A6%B0%E0%A7%8B%E0%A6%A8%E0%A6%BE%E0%A7%9F-%E0%A6%86%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4"
+                                target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৬-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    আরেক চিকিৎসক করোনায় আক্রান্ত</h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.kalerkantho.com/print-edition/last-page/2020/03/26/890691"
+                                target="_blank">
+                                <img style="margin-left: 15px; height: 32px; padding-top: 1%;"
+                                    src="images/kalerKantho.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৬-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    নতুন পরীক্ষাকেন্দ্র ও হাসপাতাল নিয়ে জটিলতা</h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/bangladesh/article/1647098/%E0%A6%9A%E0%A7%80%E0%A6%A8-%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87-%E0%A6%8F%E0%A6%B2-%E0%A6%95%E0%A6%BF%E0%A6%9F-%E0%A6%93-%E0%A6%AE%E0%A6%BE%E0%A6%B8%E0%A7%8D%E0%A6%95"
+                                target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৬-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    চীন থেকে এল কিট ও মাস্ক</h6>
+                            </a>
+                        </div>
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.thedailystar.net/bangla/%E0%A6%B6%E0%A7%80%E0%A6%B0%E0%A7%8D%E0%A6%B7-%E0%A6%96%E0%A6%AC%E0%A6%B0/%E0%A6%89%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A6%B0-%E0%A6%9F%E0%A7%8B%E0%A6%B2%E0%A6%BE%E0%A6%B0%E0%A6%AC%E0%A6%BE%E0%A6%97-%E0%A6%B2%E0%A6%95%E0%A6%A1%E0%A6%BE%E0%A6%89%E0%A6%A8-%E0%A6%B9%E0%A6%B2%E0%A7%87%E0%A6%93-%E0%A6%AD%E0%A7%87%E0%A6%A4%E0%A6%B0%E0%A7%87-%E0%A6%B8%E0%A6%BE%E0%A6%AE%E0%A6%BE%E0%A6%9C%E0%A6%BF%E0%A6%95-%E0%A6%A6%E0%A7%82%E0%A6%B0%E0%A6%A4%E0%A7%8D%E0%A6%AC-%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A6%9B%E0%A7%87%E0%A6%A8-%E0%A6%A8%E0%A6%BE-%E0%A6%85%E0%A6%A8%E0%A7%87%E0%A6%95%E0%A7%87%E0%A6%87-141046"
+                                target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%; "
+                                    src="images/daily-star-bangla-logo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৬-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">উত্তর টোলারবাগ:
+                                    লকডাউন হলেও ভেতরে সামাজিক দূরত্ব মানছেন না অনেকেই</h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/bangladesh/article/1646889/%E0%A6%A2%E0%A6%BE%E0%A6%95%E0%A6%BE%E0%A7%9F-%E0%A6%95%E0%A7%8B%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A6%A8%E0%A7%87-%E0%A6%A5%E0%A6%BE%E0%A6%95%E0%A6%BE-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%95%E0%A7%8D%E0%A6%A4%E0%A6%BF%E0%A6%B0-%E0%A6%AE%E0%A7%83%E0%A6%A4%E0%A7%8D%E0%A6%AF%E0%A7%81-%E0%A6%98%E0%A6%BF%E0%A6%93%E0%A6%B0%E0%A7%87%E0%A6%B0"
+                                target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৬-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    ঢাকায় কোয়ারেন্টিনে থাকা ব্যক্তির মৃত্যু, ঘিওরের একটি গ্রাম লকডাউন</h6>
+                            </a>
+                        </div>
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.kalerkantho.com/print-edition/first-page/2020/03/26/890685"
+                                target="_blank">
+                                <img style="margin-left: 15px; height: 32px; padding-top: 1%;"
+                                    src="images/kalerKantho.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৬-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    আজ থেকে সব বন্ধ</h6>
+                            </a>
+                        </div>
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.thedailystar.net/bangla/%E0%A6%86%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%B0%E0%A7%8D%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A6%BF%E0%A6%95/%E0%A6%95%E0%A6%B0%E0%A7%8B%E0%A6%A8%E0%A6%BE%E0%A6%AD%E0%A6%BE%E0%A6%87%E0%A6%B0%E0%A6%BE%E0%A6%B8-%E0%A6%9C%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%8F%E0%A6%95-%E0%A6%B8%E0%A6%AA%E0%A7%8D%E0%A6%A4%E0%A6%BE%E0%A6%B9%E0%A7%87-%E0%A7%AB-%E0%A6%B2%E0%A6%BE%E0%A6%96-%E0%A6%AA%E0%A6%B0%E0%A7%80%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE-141034"
+                                target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;"
+                                    src="images/daily-star-bangla-logo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৬-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">করোনাভাইরাস:
+                                    জার্মানিতে এক সপ্তাহে ৫ লাখ পরীক্ষা</h6>
+                            </a>
+                        </div>
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/bangladesh/article/1647132/%E0%A6%9C%E0%A7%8D%E0%A6%AC%E0%A6%B0-%E0%A6%A8%E0%A6%BF%E0%A7%9F%E0%A7%87-%E0%A6%AC%E0%A6%BF%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A6%AC%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A6%B0-%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87-%E0%A6%B9%E0%A6%BE%E0%A6%B8%E0%A6%AA%E0%A6%BE%E0%A6%A4%E0%A6%BE%E0%A6%B2%E0%A7%87-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A7%80"
+                                target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৬-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    জ্বর নিয়ে বিমানবন্দর থেকে হাসপাতালে প্রবাসী</h6>
+                            </a>
+                        </div>
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.kalerkantho.com/print-edition/first-page/2020/03/26/890684"
+                                target="_blank">
+                                <img style="margin-left: 15px; height: 32px; padding-top: 1%;"
+                                    src="images/kalerKantho.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৬-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    করোনার বিরুদ্ধে যুদ্ধ, ঘরে থাকুন</h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/nagorik-sangbad/article/1647123/%E0%A6%AA%E0%A6%BF%E0%A6%AA%E0%A6%BF%E0%A6%87-%E0%A6%B8%E0%A6%82%E0%A6%95%E0%A6%9F-%E0%A6%9D%E0%A7%81%E0%A6%81%E0%A6%95%E0%A6%BF%E0%A6%A4%E0%A7%87-%E0%A6%B8%E0%A6%BE%E0%A6%82%E0%A6%AC%E0%A6%BE%E0%A6%A6%E0%A6%BF%E0%A6%95-%E0%A6%9A%E0%A6%BF%E0%A6%95%E0%A6%BF%E0%A7%8E%E0%A6%B8%E0%A6%95-%E0%A6%93-%E0%A6%AA%E0%A7%81%E0%A6%B2%E0%A6%BF%E0%A6%B6"
+                                target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৬-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    পিপিই সংকট: ঝুঁকিতে সাংবাদিক, চিকিৎসক ও পুলিশ
+                                </h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.kalerkantho.com/online/world/2020/03/27/891258" target="_blank">
+                                <img style="margin-left: 15px; height: 32px; padding-top: 1%;"
+                                    src="images/kalerKantho.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৬-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    কোনো অসুস্থতা নেই, তবুও করোনায় প্রাণ গেল ১৬ বছরের তরুণীর</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div>
+                    <div>
+                        <h3 style="text-align: center; color: snow;">২৫.০৩.২০২০</h3>
+                    </div>
+                    <div style="border-bottom-left-radius: 10px; border-top-left-radius: 10px;">
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/bangladesh/article/1646939/%E0%A6%AE%E0%A6%BE%E0%A6%A8%E0%A7%81%E0%A6%B7%E0%A6%95%E0%A7%87-%E0%A6%B0%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE-%E0%A6%95%E0%A6%B0%E0%A6%BE-%E0%A6%B8%E0%A6%B0%E0%A7%8D%E0%A6%AC%E0%A7%8B%E0%A6%9A%E0%A7%8D%E0%A6%9A-%E0%A6%85%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A7%E0%A6%BF%E0%A6%95%E0%A6%BE%E0%A6%B0"
+                                target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    মানুষকে রক্ষা করা সর্বোচ্চ অগ্রাধিকার: প্রধানমন্ত্রী
+                                </h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.kalerkantho.com/print-edition/first-page/2020/03/25/890275"
+                                target="_blank">
+                                <img style="margin-left: 15px; height: 32px; padding-top: 1%;"
+                                    src="images/kalerKantho.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    দেশে আরো একজনের মৃত্যু, নতুন শনাক্ত ৬</h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/bangladesh/article/1646948/%E0%A6%AC%E0%A6%B0%E0%A6%BF%E0%A6%B6%E0%A6%BE%E0%A6%B2%E0%A7%87-%E0%A7%A8%E0%A7%AA-%E0%A6%98%E0%A6%A3%E0%A7%8D%E0%A6%9F%E0%A6%BE%E0%A7%9F-%E0%A7%A8%E0%A7%A9%E0%A7%AF-%E0%A6%9C%E0%A6%A8-%E0%A6%95%E0%A7%87%E0%A6%BE%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A6%A8%E0%A7%87"
+                                target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    বরিশালে ২৪ ঘণ্টায় ২৩৯ জন কোয়ারেন্টিনে
+                                </h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.kalerkantho.com/print-edition/first-page/2020/03/25/890271"
+                                target="_blank">
+                                <img style="margin-left: 15px; height: 32px; padding-top: 1%;"
+                                    src="images/kalerKantho.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    ভারত ২১ দিনের লকডাউনে</h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/bangladesh/article/1646959/%E0%A6%B8%E0%A6%BF%E0%A6%B2%E0%A7%87%E0%A6%9F-%E0%A6%A5%E0%A7%87%E0%A6%95%E0%A7%87-%E0%A6%AF%E0%A7%81%E0%A6%95%E0%A7%8D%E0%A6%A4%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A7%80%E0%A6%B0-%E0%A6%A8%E0%A6%AE%E0%A7%81%E0%A6%A8%E0%A6%BE-%E0%A6%86%E0%A6%87%E0%A6%87%E0%A6%A1%E0%A6%BF%E0%A6%B8%E0%A6%BF%E0%A6%86%E0%A6%B0%E0%A7%87"
+                                target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    সিলেট থেকে যুক্তরাজ্যপ্রবাসীর নমুনা আইইডিসিআরে
+                                </h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.kalerkantho.com/print-edition/first-page/2020/03/25/890274"
+                                target="_blank">
+                                <img style="margin-left: 15px; height: 32px; padding-top: 1%;"
+                                    src="images/kalerKantho.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    তাপমাত্রা বাড়িয়ে করোনার বিস্তার কমানো সম্ভব</h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/international/article/1646980/%E0%A6%AF%E0%A7%81%E0%A6%95%E0%A7%8D%E0%A6%A4%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%8D%E0%A6%AF%E0%A7%87-%E0%A6%98%E0%A6%B0%E0%A7%87-%E0%A6%98%E0%A6%B0%E0%A7%87-%E0%A6%AF%E0%A6%BE%E0%A6%AC%E0%A7%87-%E0%A6%95%E0%A6%B0%E0%A7%8B%E0%A6%A8%E0%A6%BE-%E0%A6%B6%E0%A6%A8%E0%A6%BE%E0%A6%95%E0%A7%8D%E0%A6%A4%E0%A7%87%E0%A6%B0-%E0%A6%95%E0%A6%BF%E0%A6%9F"
+                                target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    যুক্তরাজ্যে ঘরে ঘরে যাবে করোনা শনাক্তের কিট
+                                </h6>
+                            </a>
+                        </div>
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.kalerkantho.com/print-edition/industry-business/2020/03/25/890160"
+                                target="_blank">
+                                <img style="margin-left: 15px; height: 32px; padding-top: 1%;"
+                                    src="images/kalerKantho.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    করোনার সময়ে ডিজিটাল লেনদেনে সুবিধা দিচ্ছে ব্যাংকগুলো</h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/bangladesh/article/1646958/%E0%A6%95%E0%A7%8B%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A6%A8-%E0%A6%B6%E0%A7%87%E0%A6%B7-%E0%A6%95%E0%A6%B0%E0%A6%B2%E0%A7%87%E0%A6%A8-%E0%A7%A8%E0%A7%A7-%E0%A6%B9%E0%A6%BE%E0%A6%9C%E0%A6%BE%E0%A6%B0-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A7%80"
+                                target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    কোয়ারেন্টিন শেষ করলেন ২১ হাজার প্রবাসী
+                                </h6>
+                            </a>
+                        </div>
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.kalerkantho.com/print-edition/last-page/2020/03/25/890277"
+                                target="_blank">
+                                <img style="margin-left: 15px; height: 32px; padding-top: 1%;"
+                                    src="images/kalerKantho.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    বিদেশফেরতরা আত্মগোপনে থাকলেই গ্রেপ্তার</h6>
+                            </a>
+                        </div>
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/durporobash/article/1646940/%E0%A6%95%E0%A7%8B%E0%A6%AD%E0%A6%BF%E0%A6%A1-%E0%A7%A7%E0%A7%AF-%E0%A6%AE%E0%A7%8B%E0%A6%95%E0%A6%BE%E0%A6%AC%E0%A6%BF%E0%A6%B2%E0%A6%BE%E0%A7%9F-%E0%A6%A4%E0%A6%BF%E0%A6%A8%E0%A6%9F%E0%A6%BF-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AA%E0%A6%BE%E0%A6%B0-%E0%A6%96%E0%A7%81%E0%A6%AC-%E0%A6%87%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A6%B0%E0%A6%9F%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%9F"
+                                target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    কোভিড-১৯ মোকাবিলায় তিনটি ব্যাপার খুব গুরুত্বপূর্ণ
+                                </h6>
+                            </a>
+                        </div>
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.kalerkantho.com/print-edition/priyo-desh/2020/03/25/890194"
+                                target="_blank">
+                                <img style="margin-left: 15px; height: 32px; padding-top: 1%;"
+                                    src="images/kalerKantho.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    করোনা ঝুঁকিতে বিরামপুর সীমান্ত</h6>
+                            </a>
+                        </div>
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/international/article/1646930/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A6%A8%E0%A7%8D%E0%A6%B8-%E0%A6%9A%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%B2%E0%A6%B8-%E0%A6%95%E0%A6%B0%E0%A7%8B%E0%A6%A8%E0%A6%BE%E0%A6%AD%E0%A6%BE%E0%A6%87%E0%A6%B0%E0%A6%BE%E0%A6%B8%E0%A7%87-%E0%A6%86%E0%A6%95%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A4"
+                                target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    প্রিন্স চার্লস করোনাভাইরাসে আক্রান্ত
+                                </h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.kalerkantho.com/print-edition/islamic-life/2020/03/25/890191"
+                                target="_blank">
+                                <img style="margin-left: 15px; height: 32px; padding-top: 1%;"
+                                    src="images/kalerKantho.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    সেবা রোগীর অধিকার</h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/opinion/article/1646971/%E0%A6%95%E0%A6%B0%E0%A7%8B%E0%A6%A8%E0%A6%BE-%E0%A6%AE%E0%A7%8B%E0%A6%95%E0%A6%BE%E0%A6%AC%E0%A6%BF%E0%A6%B2%E0%A6%BE%E0%A7%9F-%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%9A%E0%A7%8D%E0%A6%9B%E0%A6%A4%E0%A6%BE%E0%A6%B0-%E0%A6%A8%E0%A7%80%E0%A6%A4%E0%A6%BF-%E0%A6%AC%E0%A6%9C%E0%A6%BE%E0%A7%9F-%E0%A6%B0%E0%A6%BE%E0%A6%96%E0%A6%BE%E0%A6%87"
+                                target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    করোনা মোকাবিলায় স্বচ্ছতার নীতি বজায় রাখাই সর্বোত্তম
+                                </h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12" style="padding-right: 4%;">
+                <div>
+                    <div>
+                        <h3 style="text-align: center; color: snow;">২৪.০৩.২০২০</h3>
+                    </div>
+                    <div style="border-bottom-left-radius: 10px; border-top-left-radius: 10px;">
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/bangladesh/article/1646693/" target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৪-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    করোনায় আরও একজনের মৃত্যু, নতুন শনাক্ত ৬
+                                </h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/bangladesh/article/1646683" target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৪-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    করোনাভাইরাস: যা বন্ধ থাকছে, যত দিন বন্ধ থাকছে
+                                </h6>
+                            </a>
+                        </div>
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/bangladesh/article/1646678/" target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৪-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    অভ্যন্তরীণ ফ্লাইট আজ রাত ১২টা থেকে বন্ধ
+                                </h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/bangladesh/article/1646601" target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৪-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    বুয়েটের ঢাকেশ্বরী আবাসিক এলাকা লকডাউন
+                                </h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/international/article/1646807" target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    মহামারির পরবর্তী কেন্দ্র হচ্ছে যুক্তরাষ্ট্র: ডব্লিউএইচও
+                                </h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/bangladesh/article/1646779" target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    পুনর্ব্যবহারযোগ্য মাস্ক উৎপাদন করছে ব্র্যাক
+                                </h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/bangladesh/article/1646791" target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    সুরক্ষায় রেইনকোট ভরসা চিকিৎসকদের
+                                </h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/bangladesh/article/1646796/" target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    বুধবার থেকে জলকামান দিয়ে জীবাণুনাশক ছিটাবে পুলিশ
+                                </h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/bangladesh/article/1646799" target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    করোনা মোকাবিলায় প্রস্তুতিতেই ঘাটতি ছিল অনেক
+                                </h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/bangladesh/article/1646778/" target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    বান্দরবানের ৩ উপজেলায় আংশিক লকডাউন
+                                </h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/bangladesh/article/1646600" target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    করোনাভাইরাস প্রতিরোধে সেনাবাহিনী যা করবে
+                                </h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/bangladesh/article/1646792" target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    উদ্বেগ-উৎকণ্ঠায় টাকা তোলার হিড়িক
+                                </h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/bangladesh/article/1646801" target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    করোনায় কালনার চা দোকান বন্ধ, লকডাউন শিবচরে হোটেল খোলা
+                                </h6>
+                            </a>
+                        </div>
+
+                        <div style="border-radius: 8px; background-color: beige;"><a
+                                href="https://www.prothomalo.com/bangladesh/article/1646785/" target="_blank">
+                                <img style="margin-left: 15px; padding-top: 1%;" src="images/Prothom-Alo.png">
+                                <p style="color: #4f2f2f; margin-left: 15px;"><i class="fa fa-clock" aria-hidden="true"
+                                        style="margin-top: 10px;"></i> ২৫-০৩-২০২০</p>
+                                <h6 style="color: #4f2f2f; margin-left: 15px; padding-bottom: 10px;">
+                                    ঢাকা উত্তর সিটিতে জীবাণুনাশক কার্যক্রম চলছে
+                                </h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="footer" class="py-3" style="background-color: #ebeded;">
+        <div class="container" id="footerContainer">
+            <span><b>এই মহামারি পরিস্থিতিতে দেশের জনগণের মাঝে নির্ভরযোগ্য সংবাদ,গণ সচেতনতা ও জরুরী যোগাযোগ তথ্য সরবরাহ
+                    করার
+                    একটি ক্ষুদ্র প্রচেষ্টা মাত্র</b></span>
+            <style type="text/css">
+                @media screen and (max-width: 476px) {
+                    .float-right {
+                        float: left !important;
+                        padding-left: 21%;
+                    }
+
+                    #footerContainer {
+                        padding-left: 5%;
+                    }
+                }
+
+                @media screen and (max-width: 393px) {
+                    .float-right {
+                        float: left !important;
+                        padding-left: 22%;
+                    }
+
+                    #footerContainer {
+                        padding-left: 3%;
+                    }
+                }
+
+                @media screen and (max-width: 360px) {
+                    #donationHeader {
+                        margin-top: 7%;
+                    }
+
+                    #moreNewsHeadline {
+                        padding-bottom: 5%;
+                    }
+
+                }
+
+
+                @media screen and (max-width: 352px) {
+                    .float-right {
+                        float: left !important;
+                        padding-left: 25%;
+                    }
+
+                    #footerContainer {
+                        padding-left: 7%;
+                    }
+                }
+
+                @media screen and (max-width: 341px) {
+                    .float-right {
+                        float: left !important;
+                        padding-left: 21%;
+                    }
+
+                    #footerContainer {
+                        padding-left: 5%;
+                    }
+
+                }
+
+                @media screen and (max-width: 334px) {
+                    .float-right {
+                        float: left !important;
+                        padding-left: 23%;
+                    }
+
+                    #footerContainer {
+                        padding-left: 3%;
+                    }
+
+                }
+
+                @media screen and (max-width: 327px) {
+                    .float-right {
+                        float: left !important;
+                        padding-left: 23%;
+                    }
+
+                    #footerContainer {
+                        padding-left: 2%;
+                    }
+
+                }
+
+                @media screen and (max-width: 324px) {
+                    .float-right {
+                        float: left !important;
+                        padding-left: 23%;
+                    }
+
+                    #footerContainer {
+                        padding-left: 1%;
+                    }
+
+                }
+            </style>
+        </div>
+    </section>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
+        integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+        crossorigin="anonymous"></script>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js"></script>
+</body>
+
+</html>

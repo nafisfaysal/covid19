@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>
+        Corona Update BD
+    </title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159081223-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-159081223-1');
+    </script>
+
+
+    <meta charset="utf-8">
+    <meta name="robots" content="index,follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  Essential META Tags -->
+
+    <meta property="og:title" content="Codephilics">
+    <meta property="og:description" content="Technology For Smarter Business">
+    <meta property="og:image" content="https://codephilics.com/images/covid-19Logo.png">
+    <meta property="og:url" content="https://codephilics.com/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:700" rel="stylesheet">
+    <link href="images/codephilics.webp" rel="icon" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/popup.css">
+
+
+    <script src="js/Map.js"></script>
+    <script src="js/BDmap.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <div>
+        <nav class="navbar nav-transparent navbar-expand-lg navbar-light "
+            style="background-color: rgb(248, 249, 250);">
+
+            <a href="COVID-19 BD.html" class="navbar-brand"><img src="images/covid-19Logo.png"
+                    height="27px"></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="COVID-19 BD.html"> <b style="font-size: 18px;">হোম</b> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Research and Blog.html"> <b style="font-size: 18px;">রিসার্চ ও ব্লগ</b>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Emergency Contacts.html"> <b style="color: black; font-size: 18px; font-weight: bolder;"
+                                id="headLine1" class="fade-effect">জরুরি
+                                যোগাযোগ</b> </a>
+                    </li>
+                </ul>
+                <ul class="ml-auto navbar-nav">
+                    <li class="nav-item" style="font-size: 18px; padding-top: 9px; padding-right: 5px;">
+                        <a><b id="headline2" class="fade-effect">সাহায্যের হাত বাড়ান</b></a>
+                    </li>
+                    <li class="nav-item" style="font-size: 22px">
+                        <a><img onclick="document.getElementById('id01').style.display='block'"
+                                src="images/donateNow.png" style="cursor: pointer;" height="40px"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="id01" class="modal">
+
+        <div class="modal-content animate" style="border-radius: 12px;">
+            <div style="margin-top: 4%;">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">×</span>
+            </div>
+            <h2 style="text-align: center; color: snow;" id="donationHeader">সাহায্য প্রদানের জন্যে ভিজিট করুন</h2>
+            <div class="row">
+                <div class="container2 col-lg-4 col-md-6 col-sm-12"
+                    style="padding-bottom: 1%; margin-top: 15px; display: flex; align-items: center;"><a
+                        href="https://bidyanondo.org/bank-information?fbclid=IwAR1jCLxSQSNRxmYSg5KmiPoU8xWHc1DDiIZt3Mi1fYZOF1KELkFib70ZMTU"
+                        target="_blank" rel="noopener noreferrer"><img id="donation"
+                            style="border-radius: 5px; border: solid; border-color: black;"
+                            src="images/bidyanondoLogo.png" alt=""></a>
+
+                </div>
+                <div class="container2 col-lg-4 col-md-6 col-sm-12"
+                    style="padding-bottom: 1%; margin-top: 15px; display: flex; align-items: center;"><a
+                        href="https://www.facebook.com/donate/643259536496746/1259944240867027/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img id="donation" style="border-radius: 5px; border: solid; border-color: black;"
+                            src="images/manushManusherjonnefoundation.png" alt=""></a>
+                </div>
+                <div class="container2 col-lg-4 col-md-6 col-sm-12"
+                    style="padding-bottom: 1%; margin-top: 15px; display: flex; align-items: center; "><a
+                        href="https://onetakameal.org/donate?fbclid=IwAR2BFHVWPN4LVO3thhDyx4qJ0-6rn-MLlKgmjJKzmyBpgWOElRON8lTBfxc"
+                        target="_blank" rel="noopener noreferrer"><img id="donation"
+                            style="border-radius: 5px; border: solid; border-color: black;" src="images/1TakaiAhar.jpg"
+                            alt=""></a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById('id01');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        } 
+    </script>
+    <div class="blog-contents-version-one blog-2 section-blog-bg-2" style="background-image: linear-gradient(to right bottom, rgb(153, 115, 115), rgb(143, 81, 81));">
+        <div class="container" style="padding-top: 3%; padding-bottom: 3%;">
+          <h2 class="section-heading" style="text-align: center; margin-bottom: 50px; color: snow;">রিসার্চ ও ব্লগ</h2> <span
+            class="separator"></span>
+          <div class="row">
+            <!-- single travel blog-->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="single-travel-blog single-travel-blog-2">
+                <div class="blog-image" style="border-top-left-radius: 12px; border-top-right-radius: 12px;">
+                  <a><img src="images/COVID-19-infographic.png.png"
+                      alt="Generating Heatmap for Corona Virus Propagation in Python">
+                  </a>
+                </div>
+                <div class="blog-content" >
+                  <div class="blog-post-content">
+                    <h4>COVID-19 ইনফেকশনঃ মানব করোনা ভাইরাসের উৎস, সংক্রমণ ও বৈশিষ্ট্য</h4>
+                    <div class="blog-meta">
+                      <ul class="post-social-2">
+                        <li><a><i class="fa fa-user"></i> Journal of Advanced Research</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <p>করোনভাইরাস (COVID-19) একটি অত্যন্ত সংক্রমণযোগ্য এবং প্যাথোজেনিক ভাইরাল...</p>
+                  </div>
+                  <div class="read-more-btn">
+                    <a target="_blank" rel="noopener noreferrer"
+                      href="https://www.sciencedirect.com/science/article/pii/S2090123220300540?fbclid=IwAR11cMcDbdQ0opjig4zEpP0qdCUeFSxxzcCoK7H4MAqJbmRXT1VodadQtOY#f0030">আরো পড়ুন <i class="fa fa-angle-right"> </i></a>
+                  </div>
+                  <ul class="soical-share">
+                    <li><a target="_blank" rel="noopener noreferrer"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.sciencedirect.com/science/article/pii/S2090123220300540?fbclid=IwAR11cMcDbdQ0opjig4zEpP0qdCUeFSxxzcCoK7H4MAqJbmRXT1VodadQtOY%23f0030"><i
+                          class="fab fa-facebook"></i></a>
+                    </li>
+                    <li><a target="_blank" rel="noopener noreferrer"
+                        href="https://twitter.com/intent/tweet?text=https%3A//www.sciencedirect.com/science/article/pii/S2090123220300540?fbclid=IwAR11cMcDbdQ0opjig4zEpP0qdCUeFSxxzcCoK7H4MAqJbmRXT1VodadQtOY%23f0030"><i
+                          class="fab fa-twitter"></i></a>
+                    </li>
+                    <li><a target="_blank" rel="noopener noreferrer"
+                        href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.sciencedirect.com/science/article/pii/S2090123220300540?fbclid=IwAR11cMcDbdQ0opjig4zEpP0qdCUeFSxxzcCoK7H4MAqJbmRXT1VodadQtOY%23f0030&title=COVID-19%20infection%3A%20origin,%20transmission,%20and%20characteristics%20of%20human%20coronaviruses&summary=&source="><i
+                          class="fab fa-linkedin"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- single travel guide & security end-->
+    
+            <!-- single travel blog-->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="single-travel-blog single-travel-blog-2">
+                <div class="blog-image" style="border-top-left-radius: 12px; border-top-right-radius: 12px;">
+                  <a><img src="images/Coronavirus Disease 2019 Situation Summary.png"
+                      alt="Coronavirus Disease 2019 Situation Summary">
+                  </a>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-post-content">
+                    <h4>করোনা ভাইরাসের (COVID-19) এর সংক্ষিপ্ত বিবরণ</h4>
+                    <div class="blog-meta">
+                      <ul class="post-social-2">
+                        <li><a><i class="fa fa-user"></i> NATIONAL INSTITUTES OF HEALTH</a>
+                      </ul>
+                    </div>
+                    <p>CDC করোনভাইরাসের (COVID-19) প্রকোপক নিবিড়ভাবে পর্যবেক্ষণ করে...</p>
+                  </div>
+                  <div class="read-more-btn">
+                    <a target="_blank" rel="noopener noreferrer"
+                      href="https://www.nih.gov/health-information/coronavirus?fbclid=IwAR3buAeiAMhJQxIZ3GXNXZ2MS6AYUVxuXDCns5cq5aKIlOXSCzkDJo1Iswg">আরো পড়ুন <i class="fa fa-angle-right"> </i></a>
+                  </div>
+                  <ul class="soical-share">
+                    <li><a target="_blank" rel="noopener noreferrer"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.nih.gov/health-information/coronavirus?fbclid=IwAR3buAeiAMhJQxIZ3GXNXZ2MS6AYUVxuXDCns5cq5aKIlOXSCzkDJo1Iswg"><i
+                          class="fab fa-facebook"></i></a>
+                    </li>
+                    <li><a target="_blank" rel="noopener noreferrer"
+                        href="https://twitter.com/intent/tweet?text=https%3A//www.nih.gov/health-information/coronavirus?fbclid=IwAR3buAeiAMhJQxIZ3GXNXZ2MS6AYUVxuXDCns5cq5aKIlOXSCzkDJo1Iswg"><i
+                          class="fab fa-twitter"></i></a>
+                    </li>
+                    <li><a target="_blank" rel="noopener noreferrer"
+                        href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.nih.gov/health-information/coronavirus?fbclid=IwAR3buAeiAMhJQxIZ3GXNXZ2MS6AYUVxuXDCns5cq5aKIlOXSCzkDJo1Iswg&title=Coronavirus%20Disease%202019%20Situation%20Summary&summary=&source="><i
+                          class="fab fa-linkedin"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- single travel guide & security end-->
+    
+            <!-- single travel blog-->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="single-travel-blog single-travel-blog-2">
+                <div class="blog-image" style="border-top-left-radius: 12px; border-top-right-radius: 12px;">
+                  <a><img src="images/Coronavirus Disease advice.png"
+                      alt="Coronavirus Disease advice">
+                  </a>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-post-content">
+                    <h4>করোনা ভাইরাস (COVID-19) সংক্রান্ত পরামর্শ</h4>
+                    <div class="blog-meta">
+                      <ul class="post-social-2">
+                        <li><a><i class="fa fa-user"></i> National Health Servicel</a>
+                      </ul>
+                    </div>
+                    <p>এই মহামারি থেকে নিজেকে এবং জনগণকে কিছু পরামর্শ মেনে চলা প্রয়োজনীয়...
+                    </p>
+                  </div>
+                  <div class="read-more-btn">
+                    <a target="_blank" rel="noopener noreferrer"
+                      href="https://www.nhs.uk/conditions/coronavirus-covid-19/?fbclid=IwAR2YzF9x9qO-LZMxuaNRbNxuG5eJQBIZ5abZI1ALUWmMvsqmN_Zj1JR_YBw">আরো পড়ুন <i class="fa fa-angle-right"> </i></a>
+                  </div>
+                  <ul class="soical-share">
+                    <li><a target="_blank" rel="noopener noreferrer"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.nhs.uk/conditions/coronavirus-covid-19/?fbclid=IwAR2YzF9x9qO-LZMxuaNRbNxuG5eJQBIZ5abZI1ALUWmMvsqmN_Zj1JR_YBw"><i
+                          class="fab fa-facebook"></i></a>
+                    </li>
+                    <li><a target="_blank" rel="noopener noreferrer"
+                        href="https://twitter.com/intent/tweet?text=https%3A//www.nhs.uk/conditions/coronavirus-covid-19/?fbclid=IwAR2YzF9x9qO-LZMxuaNRbNxuG5eJQBIZ5abZI1ALUWmMvsqmN_Zj1JR_YBw"><i
+                          class="fab fa-twitter"></i></a>
+                    </li>
+                    <li><a target="_blank" rel="noopener noreferrer"
+                        href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.nhs.uk/conditions/coronavirus-covid-19/?fbclid=IwAR2YzF9x9qO-LZMxuaNRbNxuG5eJQBIZ5abZI1ALUWmMvsqmN_Zj1JR_YBw&title=Coronavirus%20(COVID-19)%20Advice%20&summary=&source="><i
+                          class="fab fa-linkedin"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="single-travel-blog single-travel-blog-2">
+                  <div class="blog-image" style="border-top-left-radius: 12px; border-top-right-radius: 12px;">
+                    <a><img src="images/corona virus research and explanation.jpg"
+                        alt="Coronavirus: Research, Commentary, and News">
+                    </a>
+                  </div>
+                  <div class="blog-content">
+                    <div class="blog-post-content">
+                      <h4>করোনা ভাইরাসঃ গবেষণা, ব্যাখ্যা এবং তথ্য</h4>
+                      <div class="blog-meta">
+                        <ul class="post-social-2">
+                          <li><a><i class="fa fa-user"></i> ScienceMag</a>
+                        </ul>
+                      </div>
+                      <p>সবচেয়ে সময়োচিত গবেষণা, বিশ্লেষণ, এবং সংবাদ কভারেজ সরবরাহ করার জন্য প্রয়াস নিয়ে...
+                      </p>
+                    </div>
+                    <div class="read-more-btn">
+                      <a target="_blank" rel="noopener noreferrer"
+                        href="https://www.sciencemag.org/coronavirus-research-commentary-and-news">আরো পড়ুন <i class="fa fa-angle-right"> </i></a>
+                    </div>
+                    <ul class="soical-share">
+                      <li><a target="_blank" rel="noopener noreferrer"
+                          href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.sciencemag.org/coronavirus-research-commentary-and-news"><i
+                            class="fab fa-facebook"></i></a>
+                      </li>
+                      <li><a target="_blank" rel="noopener noreferrer"
+                          href="https://twitter.com/intent/tweet?text=https%3A//www.sciencemag.org/coronavirus-research-commentary-and-news"><i
+                            class="fab fa-twitter"></i></a>
+                      </li>
+                      <li><a target="_blank" rel="noopener noreferrer"
+                          href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.sciencemag.org/coronavirus-research-commentary-and-news&title=Coronavirus%3A%20Research,%20Commentary,%20and%20News&summary=&source="><i
+                            class="fab fa-linkedin"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+
+
+            <!-- single travel guide & security end-->
+          </div>
+        </div>
+    </div>
+
+
+    <section id="footer" class="py-3" style="background-color: #ebeded;">
+        <div class="container" id="footerContainer">
+            <span><b>এই মহামারি পরিস্থিতিতে দেশের জনগণের মাঝে নির্ভরযোগ্য সংবাদ,গণ সচেতনতা ও জরুরী যোগাযোগ তথ্য সরবরাহ
+                    করার
+                    একটি ক্ষুদ্র প্রচেষ্টা মাত্র</b></span>
+            <style type="text/css">
+                @media screen and (max-width: 476px) {
+                    .float-right {
+                        float: left !important;
+                        padding-left: 21%;
+                    }
+
+                    #footerContainer {
+                        padding-left: 5%;
+                    }
+                }
+
+                @media screen and (max-width: 393px) {
+                    .float-right {
+                        float: left !important;
+                        padding-left: 22%;
+                    }
+
+                    #footerContainer {
+                        padding-left: 3%;
+                    }
+                }
+
+                @media screen and (max-width: 360px) {
+                    #donationHeader {
+                        margin-top: 7%;
+                    }
+
+                    #moreNewsHeadline {
+                        padding-bottom: 5%;
+                    }
+
+                }
+
+
+                @media screen and (max-width: 352px) {
+                    .float-right {
+                        float: left !important;
+                        padding-left: 25%;
+                    }
+
+                    #footerContainer {
+                        padding-left: 7%;
+                    }
+                }
+
+                @media screen and (max-width: 341px) {
+                    .float-right {
+                        float: left !important;
+                        padding-left: 21%;
+                    }
+
+                    #footerContainer {
+                        padding-left: 5%;
+                    }
+
+                }
+
+                @media screen and (max-width: 334px) {
+                    .float-right {
+                        float: left !important;
+                        padding-left: 23%;
+                    }
+
+                    #footerContainer {
+                        padding-left: 3%;
+                    }
+
+                }
+
+                @media screen and (max-width: 327px) {
+                    .float-right {
+                        float: left !important;
+                        padding-left: 23%;
+                    }
+
+                    #footerContainer {
+                        padding-left: 2%;
+                    }
+
+                }
+
+                @media screen and (max-width: 324px) {
+                    .float-right {
+                        float: left !important;
+                        padding-left: 23%;
+                    }
+
+                    #footerContainer {
+                        padding-left: 1%;
+                    }
+
+                }
+            </style>
+        </div>
+    </section>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
+        integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+        crossorigin="anonymous"></script>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js"></script>
+</body>
+
+</html>
