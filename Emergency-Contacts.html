@@ -84,6 +84,24 @@
             </div>
         </nav>
     </div>
+    <script type="text/javascript">
+        var i = 0;
+        function change1() {
+            var doc = document.getElementById("headLine1");
+            var color = ["red", "red", "black", "red", "red", "black"];
+            doc.style.color = color[i];
+            i = (i + 1) % color.length;
+        }
+        setInterval(change1, 1800);
+
+        function change2() {
+            var doc = document.getElementById("headline2");
+            var color = ["#e3b56b", "#a7bf06", "black", "#25d952", "#b47ddb", "black"];
+            doc.style.color = color[i];
+            i = (i + 1) % color.length;
+        }
+        setInterval(change2, 1800);
+    </script>
 
     <div id="id01" class="modal">
 
@@ -95,7 +113,7 @@
             <h2 style="text-align: center; color: snow;" id="donationHeader">সাহায্য প্রদানের জন্যে ভিজিট করুন</h2>
             <div class="row">
                 <div class="container2 col-lg-4 col-md-6 col-sm-12"
-                    style="padding-bottom: 1%; margin-top: 15px; display: flex; align-items: center;"><a
+                    style="padding-bottom: 1%; margin-top: 15px; display: flex; align-items: center; padding-left: 9%;"><a
                         href="https://bidyanondo.org/bank-information?fbclid=IwAR1jCLxSQSNRxmYSg5KmiPoU8xWHc1DDiIZt3Mi1fYZOF1KELkFib70ZMTU"
                         target="_blank" rel="noopener noreferrer"><img id="donation"
                             style="border-radius: 5px; border: solid; border-color: black;"
@@ -103,14 +121,14 @@
 
                 </div>
                 <div class="container2 col-lg-4 col-md-6 col-sm-12"
-                    style="padding-bottom: 1%; margin-top: 15px; display: flex; align-items: center;"><a
+                    style="padding-bottom: 1%; margin-top: 15px; display: flex; align-items: center; padding-left: 9%;"><a
                         href="https://www.facebook.com/donate/643259536496746/1259944240867027/" target="_blank"
                         rel="noopener noreferrer">
                         <img id="donation" style="border-radius: 5px; border: solid; border-color: black;"
                             src="images/manushManusherjonnefoundation.png" alt=""></a>
                 </div>
                 <div class="container2 col-lg-4 col-md-6 col-sm-12"
-                    style="padding-bottom: 1%; margin-top: 15px; display: flex; align-items: center; "><a
+                    style="padding-bottom: 1%; margin-top: 15px; display: flex; align-items: center; padding-left: 9%;"><a
                         href="https://onetakameal.org/donate?fbclid=IwAR2BFHVWPN4LVO3thhDyx4qJ0-6rn-MLlKgmjJKzmyBpgWOElRON8lTBfxc"
                         target="_blank" rel="noopener noreferrer"><img id="donation"
                             style="border-radius: 5px; border: solid; border-color: black;" src="images/1TakaiAhar.jpg"
