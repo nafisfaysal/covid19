@@ -27,7 +27,7 @@ span.psw {
     margin: auto;
     padding: 10px;
     border: 1px solid #888;
-    width: 55%;
+    width: 60%;
   }
   .modal-content.precaution {
     background-image: linear-gradient(to right bottom, rgb(140, 81, 81), rgb(79, 47, 47));

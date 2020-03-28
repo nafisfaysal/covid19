@@ -99,23 +99,23 @@
             <h2 style="text-align: center; color: snow;" id="donationHeader">সাহায্য প্রদানের জন্যে ভিজিট করুন</h2>
             <div class="row">
                 <div class="container2 col-lg-4 col-md-6 col-sm-12"
-                    style="padding-bottom: 1%; margin-top: 15px; display: flex; align-items: center;"><a
-                        href="https://bidyanondo.org/bank-information?fbclid=IwAR1jCLxSQSNRxmYSg5KmiPoU8xWHc1DDiIZt3Mi1fYZOF1KELkFib70ZMTU"
+                    style="padding-bottom: 1%; margin-top: 15px; display: flex; align-items: center; padding-left: 9%;">
+                    <a href="https://bidyanondo.org/bank-information?fbclid=IwAR1jCLxSQSNRxmYSg5KmiPoU8xWHc1DDiIZt3Mi1fYZOF1KELkFib70ZMTU"
                         target="_blank" rel="noopener noreferrer"><img id="donation"
                             style="border-radius: 5px; border: solid; border-color: black;"
                             src="images/bidyanondoLogo.png" alt=""></a>
 
                 </div>
                 <div class="container2 col-lg-4 col-md-6 col-sm-12"
-                    style="padding-bottom: 1%; margin-top: 15px; display: flex; align-items: center;"><a
-                        href="https://www.facebook.com/donate/643259536496746/1259944240867027/" target="_blank"
+                    style="padding-bottom: 1%; margin-top: 15px; display: flex; align-items: center; padding-left: 9%;">
+                    <a href="https://www.facebook.com/donate/643259536496746/1259944240867027/" target="_blank"
                         rel="noopener noreferrer">
                         <img id="donation" style="border-radius: 5px; border: solid; border-color: black;"
                             src="images/manushManusherjonnefoundation.png" alt=""></a>
                 </div>
                 <div class="container2 col-lg-4 col-md-6 col-sm-12"
-                    style="padding-bottom: 1%; margin-top: 15px; display: flex; align-items: center; "><a
-                        href="https://onetakameal.org/donate?fbclid=IwAR2BFHVWPN4LVO3thhDyx4qJ0-6rn-MLlKgmjJKzmyBpgWOElRON8lTBfxc"
+                    style="padding-bottom: 1%; margin-top: 15px; display: flex; align-items: center; padding-left: 9%;">
+                    <a href="https://onetakameal.org/donate?fbclid=IwAR2BFHVWPN4LVO3thhDyx4qJ0-6rn-MLlKgmjJKzmyBpgWOElRON8lTBfxc"
                         target="_blank" rel="noopener noreferrer"><img id="donation"
                             style="border-radius: 5px; border: solid; border-color: black;" src="images/1TakaiAhar.jpg"
                             alt=""></a>
@@ -127,7 +127,7 @@
         </div>
     </div>
 
-    <script>
+    <script type="text/javascript">
         var modal = document.getElementById('id01');
         window.onclick = function (event) {
             if (event.target == modal) {
@@ -135,7 +135,98 @@
             }
         } 
     </script>
+    <script type="text/javascript">
+        var i = 0;
+        function change1() {
+            var doc = document.getElementById("headLine1");
+            var color = ["red", "red", "black", "red", "red", "black"];
+            doc.style.color = color[i];
+            i = (i + 1) % color.length;
+        }
+        setInterval(change1, 1800);
 
+        function change2() {
+            var doc = document.getElementById("headline2");
+            var color = ["#e3b56b", "#a7bf06", "black", "#25d952", "#b47ddb", "black"];
+            doc.style.color = color[i];
+            i = (i + 1) % color.length;
+        }
+        setInterval(change2, 1800);
+    </script>
+    <style type="text/css">
+        .fade-effect {
+            transition: color 1s;
+        }
+
+        .blinking {
+            -webkit-animation: 1s blink ease infinite;
+            -moz-animation: 1s blink ease infinite;
+            -ms-animation: 1s blink ease infinite;
+            -o-animation: 1s blink ease infinite;
+            animation: 1s blink ease infinite;
+
+        }
+
+        @keyframes blink {
+
+            from,
+            to {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @-moz-keyframes blink {
+
+            from,
+            to {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes blink {
+
+            from,
+            to {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @-ms-keyframes blink {
+
+            from,
+            to {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @-o-keyframes blink {
+
+            from,
+            to {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+    </style>
 
     <section class="content" style="background-color: #ebeded;">
 
@@ -350,7 +441,7 @@
 
             <div class="col-lg-6 col-md-12 col-sm-12"
                 style="background-color: #184752; border-top-right-radius: 10px; border-bottom-right-radius: 10px;">
-                <div class="row " style="padding-top: 3%; padding-left: 30%;">
+                <div style="padding-top: 3%;">
                     <h3 style="text-align: center; line-height: 2; color: snow;">নিষেধাজ্ঞা ও প্রতিরোধ স্বাস্থ্যবিধি
                     </h3>
                 </div>
